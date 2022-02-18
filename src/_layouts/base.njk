@@ -10,22 +10,21 @@
     <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ siteUrl }}">
-    <meta property="og:image" content="{{ siteUrl }}{{ '/assets/img/og.jpg' | url }}">
+    <meta property="og:image" content="{{ siteUrl }}{{ 'assets/img/og_image.png' | url }}">
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" id="favicon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" id="favicon" href="{{ '/assets/img/favicon.png' | url }}">
 
     <link rel="stylesheet" href="{{ '/assets/css/flickity.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleId }}"></script>
+    {# <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleId }}"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', '{{ googleId }}');
-    </script>
+    </script> #}
   </head>
   <body>
     {{ content | safe }}
