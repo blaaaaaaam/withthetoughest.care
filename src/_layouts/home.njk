@@ -1,0 +1,115 @@
+---
+layout: base.njk
+templateEngineOverride: njk,md
+---
+<section class="cover">
+  <picture class="plant">
+    <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Web_Desktop.png' }}" />
+    <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Web_Mobile.png' }}" />
+    <img src="{{ '/assets/img/JY_Web_Desktop.png' }}" alt="Rubbing of milk thistle plant on canvas texture" />
+  </picture>
+  <picture class="title">
+    <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Title_Desktop.svg' }}" />
+    <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Title_Mobile.svg' }}" />
+    <img src="{{ '/assets/img/JY_Title_Desktop.svg' }}" alt="with the toughest care, the most economical tenderness" />
+  </picture>
+</section>
+<section class="content">
+  <header>
+    <div>
+      <h1><em>With the toughest care,</em></h1>
+      <h1><em> the most economical tenderness</em></h1>
+      <h1 class="name">Justine Youssef</h1>
+    </div>
+  <h2 class="heading">Hawai‘i Triennial 2022</h2>
+  </header>
+  <main>
+    <section class="text about">
+      <h2 class="heading">About</h2>
+      <div>{{ about | markdownify | safe }}</div>
+    </section>
+    <section class="text registration">
+      <h2 class="heading">Registration</h2>
+      <div>{{ registration | markdownify | safe }}</div>
+      <div class="mailchimp">
+        <form action="https://gmail.us5.list-manage.com/subscribe/post?u=2c1d9431ef98c12f5d7b6144b&amp;id=4ef9f5e7e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <div class="field full">
+              <label for="mce-FNAME">Name<span class="asterisk">*</span></label>
+              <input type="text" value="" placeholder="&#160;" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="field full">
+              <label for="mce-EMAIL">Email<span class="asterisk">*</span></label>
+              <input type="email" value="" placeholder="&#160;" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="address">
+              <div class="field full">
+                <label for="mce-ADDRESS-addr1">Address<span class="asterisk">*</span></label>
+                <input type="text" value="" placeholder="&#160;" maxlength="50" name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" class="required">
+              </div>
+              <div class="field full">
+                <label for="mce-ADDRESS-addr2" style="visibility:hidden">Address 2</label>
+                <input type="text" value="" placeholder="&#160;" maxlength="50" name="ADDRESS[addr2]" id="mce-ADDRESS-addr2">		
+              </div>
+              <div class="field full">
+                <label for="mce-ADDRESS-city">City<span class="asterisk">*</span></label>
+                <input type="text" value="" placeholder="&#160;" maxlength="40" name="ADDRESS[city]" id="mce-ADDRESS-city" class="required">
+              </div>
+              <div class="field">
+                <label for="mce-ADDRESS-state">State<span class="asterisk">*</span></label>
+                <input type="text" value="" placeholder="&#160;" maxlength="20" name="ADDRESS[state]" id="mce-ADDRESS-state" class="required">
+              </div>
+              <div class="field zip">
+                <label for="mce-ADDRESS-zip">Zip Code<span class="asterisk">*</span></label>
+                <input type="text" value="" placeholder="&#160;" maxlength="10" name="ADDRESS[zip]" id="mce-ADDRESS-zip" class="required">
+              </div>
+              <div class="field hidden">
+                <label for="mce-ADDRESS-country">Country</label>
+                <select name="ADDRESS[country]" id="mce-ADDRESS-country" class="required"><option value="164" selected>USA</option></select>
+              </div>
+            </div>
+            <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c1d9431ef98c12f5d7b6144b_4ef9f5e7e1" tabindex="-1" value=""></div>
+            <div class="field">
+              <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+          </div>
+        </form>
+        <div class="privacy">
+          <p>We’re using Mailchimp to handle the registration process. By clicking submit, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
+        </div>
+      </div>
+      <div class="registration2">{{ registration2 | markdownify | safe }}</div>
+    </section>
+    <section class="text documentation">
+      <h2 class="heading">Documentation</h2>
+    </section>
+    <section class="text thistle">
+      <h2 class="heading">Blessed Milk Thistle</h2>
+      <div>{{ thistle | markdownify | safe }}</div>
+    </section>
+    <section class="text bio">
+      <h2 class="heading">Biography</h2>
+      <div>{{ bio | markdownify | safe }}</div>
+    </section>
+    <section class="text acknowledgements">
+      <h2 class="heading">Acknowledgements</h2>
+      <div>{{ acknowledgements | markdownify | safe }}</div>
+    </section>
+    <section class="text grant">
+      <h2 class="heading"></h2>
+      <div>{{ grant | markdownify | safe }}</div>
+      <div class="logos">
+        <img src="{{ '/assets/img/ausco_logo.png' }}" alt="Australia Council for the Arts logo" />
+        <img src="{{ '/assets/img/parra_logo.png' }}" alt="City of Parramatta logo" />
+        <img src="{{ '/assets/img/hc_logo.png' }}" alt="Hawai‘i Contemporary logo" />
+      </div>
+    </section>
+    <section class="text credit">
+      <div>Design & development by <a href="https://atanazefti.com" target="_blank">Alexander Tanazefti</a></div>
+    </section>
+  </main>
+</section>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ siteUrl }}">
+    <meta property="og:image" content="{{ siteUrl }}{{ '/assets/img/og.jpg' | url }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" id="favicon" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
+    <script src="{{ '/assets/js/scripts.js' | url }}"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ googleId }}');
+    </script>
+  </head>
+  <body>
+    {{ content | safe }}
+  </body>
+</html>
