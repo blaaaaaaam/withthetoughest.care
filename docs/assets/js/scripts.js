@@ -1,16 +1,17 @@
-// let elem = document.querySelector('.carousel');
-// let flkty = new Flickity( elem, {
-//   // options
-//   cellAlign: 'center',
-//   imagesLoaded: true,
-//   wrapAround: true,
-//   adaptiveHeight: true,
-//   pageDots: false,
-// });
+let carousels = document.querySelectorAll('.carousel')
 
-window.addEventListener('load', (event) => {
-  let loaded = document.createEvent('HTMLEvents')
-  loaded.initEvent('resize', true, false)
-  document.dispatchEvent(loaded)
-  console.log('loaded')
+carousels.forEach((carousel) => {
+  let flkty = new Flickity(carousel, {
+    cellAlign: 'center',
+    imagesLoaded: true,
+    wrapAround: true,
+    adaptiveHeight: true,
+    pageDots: false,
+    // setGallerySize: false
+  })
+  window.addEventListener('load', (event) => {
+    window.dispatchEvent(new Event('resize'))
+    flkty.resize()
+    flkty.reposition()
+  })
 })

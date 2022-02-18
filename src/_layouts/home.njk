@@ -3,11 +3,18 @@ layout: base.njk
 templateEngineOverride: njk,md
 ---
 <section class="cover">
-  {% cover "./src/assets/img/JY_Web_Desktop.png", "./src/assets/img/JY_Web_Mobile.png", "Rubbing of milk thistle plant on canvas texture", "plant" %}
+  {# {% cover "./src/assets/img/JY_Web_Desktop.png", "./src/assets/img/JY_Web_Mobile.png", "Rubbing of milk thistle plant on canvas texture", "plant" %}
   <picture class="title">
     <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Title_Desktop.svg' }}" />
     <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Title_Mobile.svg' }}" />
     <img src="{{ '/assets/img/JY_Title_Desktop.svg' }}" alt="with the toughest care, the most economical tenderness" />
+  </picture> #}
+
+  {% cover "./src/assets/img/JY_Web_Inverted_Desktop.png", "./src/assets/img/JY_Web_Inverted_Mobile.png", "Rubbing of milk thistle plant on canvas texture", "plant" %}
+  <picture class="title">
+    <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Title_Inverted_Desktop.svg' }}" />
+    <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Title_Inverted_Mobile.svg' }}" />
+    <img src="{{ '/assets/img/JY_Title_Inverted_Desktop.svg' }}" alt="with the toughest care, the most economical tenderness" />
   </picture>
 </section>
 <section class="content">
@@ -83,21 +90,22 @@ templateEngineOverride: njk,md
     <section class="text documentation">
       <h2 class="heading">Documentation</h2>
       <div></div>
-      <div class="carousel" data-flickity='{"cellAlign":"center","imagesLoaded":true,"wrapAround":true,"adaptiveHeight":true,"pageDots":false}'>
+      <div class="carousel">
+        {% image "./src/images/IMG_7692.jpg", "" %}
         {% image "./src/images/IMG_6794.jpg", "" %}
         {% image "./src/images/IMG_7257.jpg", "" %}
         {% image "./src/images/IMG_8823.jpg", "" %}
         {% image "./src/images/IMG_6910.jpg", "" %}
         {% image "./src/images/IMG_7765.jpg", "" %}
         {% image "./src/images/IMG_7452.jpg", "" %}
-        {% image "./src/images/IMG_7692.jpg", "" %}
         {% image "./src/images/IMG_7690.jpg", "" %}
         {% image "./src/images/IMG_7721.jpg", "" %}
         {% image "./src/images/IMG_6778.jpg", "" %}
         {% image "./src/images/IMG_6825.jpg", "" %}
         {% image "./src/images/IMG_6832.jpg", "" %}
       </div>
-      <div class="carousel" data-flickity='{"cellAlign":"center","imagesLoaded":true,"wrapAround":true,"adaptiveHeight":true,"pageDots":false}'>
+      <div class="carousel">
+        {% image "./src/images/IMG_8178.jpg", "" %}
         {% image "./src/images/IMG_7805.jpg", "" %}
         {% image "./src/images/IMG_8095.jpg", "" %}
         {% image "./src/images/IMG_8709.jpg", "" %}
@@ -106,9 +114,9 @@ templateEngineOverride: njk,md
         {% image "./src/images/IMG_7994.jpg", "" %}
         {% image "./src/images/IMG_8677.jpg", "" %}
         {% image "./src/images/IMG_8089.jpg", "" %}
-        {% image "./src/images/IMG_8178.jpg", "" %}
         {% image "./src/images/IMG_8146.jpg", "" %}
       </div>
+      <div class="credit"><p>Photography by Hyun Lee</p></div>
     </section>
     <section class="text thistle">
       <h2 class="heading">Blessed Milk Thistle</h2>
@@ -132,7 +140,7 @@ templateEngineOverride: njk,md
       </div>
     </section>
     <section class="text credit">
-      <div>Design & development by <a href="https://atanazefti.com" target="_blank">Alexander Tanazefti</a></div>
+      <p>Design & development by <a href="https://atanazefti.com" target="_blank">Alexander Tanazefti</a></p>
     </section>
   </main>
 </section>
