@@ -3,11 +3,7 @@ layout: base.njk
 templateEngineOverride: njk,md
 ---
 <section class="cover">
-  <picture class="plant">
-    <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Web_Desktop.png' }}" />
-    <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Web_Mobile.png' }}" />
-    <img src="{{ '/assets/img/JY_Web_Desktop.png' }}" alt="Rubbing of milk thistle plant on canvas texture" />
-  </picture>
+  {% cover "./src/assets/img/JY_Web_Desktop.png", "./src/assets/img/JY_Web_Mobile.png", "Rubbing of milk thistle plant on canvas texture", "plant" %}
   <picture class="title">
     <source media="(orientation:landscape)" srcset="{{ '/assets/img/JY_Title_Desktop.svg' }}" />
     <source media="(orientation:portrait)" srcset="{{ '/assets/img/JY_Title_Mobile.svg' }}" />
@@ -32,7 +28,7 @@ templateEngineOverride: njk,md
       <h2 class="heading">Registration</h2>
       <div>{{ registration | markdownify | safe }}</div>
       <div class="mailchimp">
-        <form action="https://gmail.us5.list-manage.com/subscribe/post?u=2c1d9431ef98c12f5d7b6144b&amp;id=4ef9f5e7e1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <form action="https://care.us14.list-manage.com/subscribe/post?u=ccbd97ec31c9fff7815a3f355&amp;id=b7393a1b08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <div class="field full">
               <label for="mce-FNAME">Name<span class="asterisk">*</span></label>
@@ -72,7 +68,7 @@ templateEngineOverride: njk,md
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
             </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2c1d9431ef98c12f5d7b6144b_4ef9f5e7e1" tabindex="-1" value=""></div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ccbd97ec31c9fff7815a3f355_b7393a1b08" tabindex="-1" value=""></div>
             <div class="field">
               <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
             </div>
@@ -86,6 +82,33 @@ templateEngineOverride: njk,md
     </section>
     <section class="text documentation">
       <h2 class="heading">Documentation</h2>
+      <div></div>
+      <div class="carousel" data-flickity='{"cellAlign":"center","imagesLoaded":true,"wrapAround":true,"adaptiveHeight":true,"pageDots":false}'>
+        {% image "./src/images/IMG_6794.jpg", "" %}
+        {% image "./src/images/IMG_7257.jpg", "" %}
+        {% image "./src/images/IMG_8823.jpg", "" %}
+        {% image "./src/images/IMG_6910.jpg", "" %}
+        {% image "./src/images/IMG_7765.jpg", "" %}
+        {% image "./src/images/IMG_7452.jpg", "" %}
+        {% image "./src/images/IMG_7692.jpg", "" %}
+        {% image "./src/images/IMG_7690.jpg", "" %}
+        {% image "./src/images/IMG_7721.jpg", "" %}
+        {% image "./src/images/IMG_6778.jpg", "" %}
+        {% image "./src/images/IMG_6825.jpg", "" %}
+        {% image "./src/images/IMG_6832.jpg", "" %}
+      </div>
+      <div class="carousel" data-flickity='{"cellAlign":"center","imagesLoaded":true,"wrapAround":true,"adaptiveHeight":true,"pageDots":false}'>
+        {% image "./src/images/IMG_7805.jpg", "" %}
+        {% image "./src/images/IMG_8095.jpg", "" %}
+        {% image "./src/images/IMG_8709.jpg", "" %}
+        {% image "./src/images/IMG_7924.jpg", "" %}
+        {% image "./src/images/IMG_7985.jpg", "" %}
+        {% image "./src/images/IMG_7994.jpg", "" %}
+        {% image "./src/images/IMG_8677.jpg", "" %}
+        {% image "./src/images/IMG_8089.jpg", "" %}
+        {% image "./src/images/IMG_8178.jpg", "" %}
+        {% image "./src/images/IMG_8146.jpg", "" %}
+      </div>
     </section>
     <section class="text thistle">
       <h2 class="heading">Blessed Milk Thistle</h2>

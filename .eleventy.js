@@ -1,6 +1,66 @@
 const path = require('path')
 const prettier = require('prettier')
 
+const Image = require("@11ty/eleventy-img")
+
+let options = {
+  widths: [300, 600, 900, 1200, 2000],
+  formats: ['webp', 'jpeg'],
+  urlPath: "/assets/img/",
+  outputDir: "./docs/assets/img",
+}
+
+async function imageShortcode(src, alt, sizes = "100vw") {
+  if(alt === undefined) {
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+  }
+
+  let metadata = await Image(src, options);
+  let lowsrc = metadata.jpeg[0];
+  let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+  return `<figure><picture>
+  ${Object.values(metadata).map(imageFormat => {
+    return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+  }).join("\n")}
+    <img
+      src="${lowsrc.url}"
+      width="${highsrc.width}"
+      height="${highsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture></figure>`;
+}
+
+async function coverShortcode(src, src2, alt, classname, sizes = "100vw") {
+  if(alt === undefined) {
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
+  }
+
+  let metadata = await Image(src, options);
+  let metadata2 = await Image(src2, options);
+
+  let lowsrc = metadata.jpeg[0];
+  let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+  return `<picture class="${classname}">
+  ${Object.values(metadata).map(imageFormat => {
+    return `  <source type="${imageFormat[0].sourceType}" media="(orientation:landscape)" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+  }).join("\n")}
+  ${Object.values(metadata2).map(imageFormat => {
+    return `  <source type="${imageFormat[0].sourceType}" media="(orientation:portrait)" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
+  }).join("\n")}
+    <img
+      src="${lowsrc.url}"
+      width="${highsrc.width}"
+      height="${highsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture>`;
+}
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets')
   eleventyConfig.addPassthroughCopy('CNAME')
@@ -28,6 +88,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('markdownify', (markdownString) =>
     md.render(markdownString)
   );
+
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("cover", coverShortcode);
 
   return {
     markdownTemplateEngine: 'njk',

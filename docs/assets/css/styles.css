@@ -20,6 +20,8 @@
 
 :root {
   --space: 4rem;
+  --margintb: 9rem;
+  --marginlr: 13.5rem;
   --main: 3rem/var(--space) ETBembo, serif;
   --title: 2rem/2.5rem ETBembo, serif;
   --heading: 1.33rem/1.77rem ETBembo, serif;
@@ -57,41 +59,24 @@ picture { overflow: visible; }
   position: absolute;
 }
 .title img {
-  padding: 13.5rem;
+  padding: var(--margintb) var(--marginlr);
   object-fit: contain;
   width: 100%;
   height: 100%;
   position: absolute;
 }
-@media(orientation:landscape) {
-  .plant img {
-    width: 100vw;
-    min-height: 100vh;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-@media(orientation:portrait) {
-  .plant img {
-    object-fit:cover;
-    width: 100%;
-    height: 100%;
-  }
-}
 
 .content {
-  margin: 13.5rem;
+  margin: var(--margintb) var(--marginlr);
   display: grid;
   grid-template-columns: minmax(max-content, 1fr) auto;
   align-items: baseline;
 }
-.content * { z-index: 100 }
 
 header {
-  height: calc(100vh - 27rem);
+  height: calc(100vh - calc(var(--margintb)*2));
   position: sticky;
-  top: 13.5rem;
+  top: var(--margintb);
   display: flex;
   flex-direction: column;
 }
@@ -118,7 +103,7 @@ header h2 { margin-top: auto }
 .text + .text { margin-top: calc(var(--space)*5) }
 .text h2 {
   position: sticky;
-  top: calc(13.5rem + 1.55rem);
+  top: calc(var(--margintb) + 1.55rem);
   text-align: right;
 }
 .text p + p { margin-top: var(--space) }
@@ -127,7 +112,7 @@ header h2 { margin-top: auto }
   line-height: 0; 
   text-transform: uppercase; 
 }
-/* .about { padding-top: 100vh } */
+.about * { z-index: 100 }
 .registration2 { grid-column: 2; margin-top: calc(var(--space)*1.5) }
 .grant div, .credit div {
   font: var(--heading);
@@ -142,6 +127,42 @@ header h2 { margin-top: auto }
 }
 .logos img { max-width: 100% }
 .credit div { margin-bottom: .7rem }
+
+.carousel {
+  grid-column: 1/-1;
+}
+.carousel + .carousel { margin-top: calc(var(--space)*5) }
+
+figure {
+  display: block;
+  width: 100%;
+  height: max-content;
+  max-height: 75vh;
+  text-align: right;
+  background: white;
+}
+figure img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 75vh;
+  margin-left: auto;
+}
+.flickity-button {
+  height: 100%;
+  width: 50%;
+  border-radius: 0;
+  display: block;
+  opacity: 0;
+}
+.flickity-button:hover, .flickity-button:active { opacity: 0 }
+.flickity-button.previous:hover { cursor: url('https://withthetoughest.care/assets/img/Cursor_Prev.png'), w-resize; }
+.flickity-button.next:hover { cursor: url('https://withthetoughest.care/assets/img/Cursor_Next.png'), e-resize; }
+.flickity-prev-next-button.next { right: 0 }
+.flickity-prev-next-button.previous { left: 0 }
+
+.flickity-button-icon { display: none; }
 
 .mailchimp { 
   grid-column: 2;
@@ -187,23 +208,42 @@ header h2 { margin-top: auto }
 }
 .mailchimp .privacy a:hover { text-decoration: none }
 
+@media(orientation:landscape) {
+  .plant img {
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media(orientation:portrait) {
+  .plant img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (orientation:landscape) and (min-height:1050px) {
+  :root { --margintb: 13.5rem; }
+}
 @media (max-width:1450px) {
   :root { 
     --space: 3.2rem;
     --main: 2.25rem/var(--space) ETBembo, serif; 
   }
   .heading, .credit div { margin-bottom: .3em }
-  .text h2 { top: calc(13.5rem + 1rem) }
+  .text h2 { top: calc(var(--margintb) + 1rem) }
 }
 @media (max-width:1250px) {
   :root { 
     --space: 2.5rem;
     --main: 2rem/var(--space) ETBembo, serif;
   }
-  .content { margin: 13.5rem 6.75rem }
-  .title img { padding: 13.5rem 6.75rem }
+  .content { margin: var(--margintb) 6.75rem }
+  .title img { padding: var(--margintb) 6.75rem }
   .heading, .credit div { margin-bottom: .15em }
-  .text h2 { top: calc(13.5rem + .55rem) }
+  .text h2 { top: calc(var(--margintb) + .55rem) }
 }
 @media (max-width:1050px) {
   .content { 
@@ -216,7 +256,7 @@ header h2 { margin-top: auto }
     top: 0;
     padding: calc(var(--space)*2) 0;
     background: white;
-    z-index: 100;
+    z-index: 200;
   }
   header h1 { display: inline }
   header h1:last-of-type { margin-left: var(--space) }

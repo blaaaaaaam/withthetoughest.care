@@ -14,8 +14,8 @@
     <link rel="icon" id="favicon" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+    <link rel="stylesheet" href="{{ '/assets/css/flickity.min.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
-    <script src="{{ '/assets/js/scripts.js' | url }}"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ googleId }}"></script>
     <script>
@@ -27,5 +27,8 @@
   </head>
   <body>
     {{ content | safe }}
+    
+    <script src="{{ '/assets/js/flickity.pkgd.min.js' | url }}"></script>
+    <script src="{{ '/assets/js/scripts.js' | url }}"></script>
   </body>
 </html>
