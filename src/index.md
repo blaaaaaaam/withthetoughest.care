@@ -11,7 +11,7 @@ about: |
 
   The work is in dialogue with the scent-related artefacts that have been uprooted from Greater Syria and housed at the Shangri La Museum of Islamic Art, Culture & Design in Honolulu. The scent of Blessed Milk Thistle unfolds both a space to interrogate histories of settler relationships to land, and a portal to access traces of the plant’s restorative properties, knowledge of which has become erased through displacement. 
 
-  *With the toughest care, The most economical tenderness* moves through routes similar to early colonial ships, via ruptured supply chains from Dharug Land in Sydney, Australia, where the plant was harvested and is equally invasive. It takes its name from Judith Wright’s *The Eucalypt and the National Character*, a poem that co-opts a native plant and likens it to the settler Australian identity.
+  *With the toughest care, The most economical tenderness* was created for <a href="https://hawaiicontemporary.org/artist-justine-youssef" target="_blank">Hawai‘i Triennial 2022</a>. The work moves through routes similar to early colonial ships, via ruptured supply chains from Dharug Land in Sydney, Australia, where the plant was harvested and is equally invasive. It takes its name from Judith Wright’s *The Eucalypt and the National Character*, a poem that co-opts a native plant and likens it to the settler Australian identity.
 
 registration: |
   Complete this form for an opportunity to receive *With the toughest care, The most economical tenderness*, an experiment with postal systems in a time of shipping crises.
@@ -40,11 +40,11 @@ thistle: |
 bio: |
   Justine Youssef works across mediums from scent to video, having recently exhibited *Under the table I learnt how to feed you* at the Museum of Contemporary Art, Sydney (2022); *Lovesick Puppy* with Utp (2021); and *All Blessings, All Curses* at 4A Centre for Contemporary Asian Art, Sydney (2018). They have exhibited widely, with spaces such as CARPARK, Brisbane (2021); PHOTO 2020, Melbourne (2020); and Salamanca Arts Centre, Hobart (2020). Their work has been published with IchikawaEdward & no more poetry, Cordite Poetry Review, and 4A Papers, among others.
 
-  They live across unceded Wangal and Dharug lands in Sydney, Australia where they were a Parramatta Artist Studios resident from 2019-2021 and the 2019 recipient of the Copyright Agency’s John Fries Award. They were co-director at Firstdraft, co-founded the artist-run space Pari, and have organised various educational programs for the National Association for the Visual Arts. *With the toughest care, The most economical tenderness* was created for the Hawai‘i Triennial 2022, and marks Youssef’s first work made in response to a site they have never visited overseas.
+  They live across unceded Wangal and Dharug lands in Sydney, Australia. *With the toughest care, The most economical tenderness* was created for the Hawai‘i Triennial 2022, and marks their first work made in response to a site they have never visited overseas (<a href="https://hawaiicontemporary.org/artist-justine-youssef" target="_blank">more</a>).
 acknowledgements: |
   With thanks to Reem Bassous, Alissar Chidiac, Kaili Chun, Dara Gill, Hana Hoogedeure, Hyun Lee, Leslee Michelsen, Tanushri Saha, Alexander Tanazefti, Latai Taumoepeau, Miwako Tezuka, and Donnalyn Xu.
 
   *With the toughest care, The most economical tenderness* was made across sovereign Dharug and Wangal lands in Sydney, Australia, and an invitation to the work is housed in Waikīkī, Honolulu, with respect and gratitude to their Elders past and present, and to the Elders of the many Countries that this work reaches.
 
-grant: This project has been assisted by the Australian Government through the Australia Council, its arts funding and advisory body. In addition, this project has been supported through a City of Parramatta Council Community Grant.
+grant: This project has been assisted by the Australia Council for the Arts, its arts funding and advisory body, and through a City of Parramatta Council Community Grant.
 ---
