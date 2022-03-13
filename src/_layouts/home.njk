@@ -24,12 +24,15 @@ templateEngineOverride: njk,md
       <h1><em> the most economical tenderness</em></h1>
       <h1 class="name">Justine Youssef</h1>
     </div>
-  <h2 class="heading">Hawai‘i Triennial 2022</h2>
+  <h2>Hawai‘i Triennial 2022</h2>
   </header>
   <main>
     <section class="text about">
       <h2 class="heading">About</h2>
       <div>{{ about | markdownify | safe }}</div>
+    </section>
+    <section class="illustration">
+      <img src="{{ '/assets/img/JY_Illustration_1.png' }}" alt="Illustration of Milk Thistle" />
     </section>
     <section class="text registration">
       <h2 class="heading">Registration</h2>
@@ -122,9 +125,15 @@ templateEngineOverride: njk,md
       <h2 class="heading">Blessed Milk Thistle</h2>
       <div>{{ thistle | markdownify | safe }}</div>
     </section>
+    <section class="illustration">
+      <img src="{{ '/assets/img/JY_Illustration_2.png' }}" alt="Illustration of Milk Thistle" />
+    </section>
     <section class="text bio">
       <h2 class="heading">Biography</h2>
       <div>{{ bio | markdownify | safe }}</div>
+    </section>
+    <section class="illustration">
+      <img src="{{ '/assets/img/JY_Illustration_3.png' }}" alt="Illustration of perfume vials" />
     </section>
     <section class="text acknowledgements">
       <h2 class="heading">Acknowledgements</h2>
@@ -140,7 +149,7 @@ templateEngineOverride: njk,md
       </div>
     </section>
     <section class="text credit">
-      <p>Design & development by <a href="https://atanazefti.com" target="_blank">Alexander Tanazefti</a></p>
+      <p>Illustrations by <a href="http://www.hanahoogedeure.com.au/" target="_blank">Hana Hoogedeure</a>, photography by <a href="https://hyunleee.com/" target="_blank">Hyun Lee</a>, design and code by <a href="https://atanazefti.com" target="_blank">Alexander Tanazefti</a></p>
     </section>
   </main>
 </section>
