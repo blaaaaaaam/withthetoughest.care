@@ -3,7 +3,7 @@ layout: home.njk
 title: With the toughest care, the most economical tenderness, Justine Youssef
 description: A mail artwork by Justine Youssef for the Hawai‘i Triennial 2022
 siteUrl: https://withthetoughest.care/
-googleId:
+googleId: G-P4YZZ42EZ9
 about: |
   *With the toughest care, The most economical tenderness* is an artwork shipped to you, where you can register to receive a package containing a vial of scented oil. 
 
