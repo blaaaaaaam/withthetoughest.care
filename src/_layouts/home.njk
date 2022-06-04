@@ -33,58 +33,6 @@ templateEngineOverride: njk,md
     </section>
     <section class="text registration">
       <h2 class="heading">Registration</h2>
-      <div>{{ registration | markdownify | safe }}</div>
-      <div class="mailchimp">
-        <form action="https://care.us14.list-manage.com/subscribe/post?u=ccbd97ec31c9fff7815a3f355&amp;id=b7393a1b08" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <div class="field full">
-              <label for="mce-FNAME">Name<span class="asterisk">*</span></label>
-              <input type="text" value="" placeholder="&#160;" name="FNAME" class="required" id="mce-FNAME">
-            </div>
-            <div class="field full">
-              <label for="mce-EMAIL">Email<span class="asterisk">*</span></label>
-              <input type="email" value="" placeholder="&#160;" name="EMAIL" class="required email" id="mce-EMAIL">
-            </div>
-            <div class="address">
-              <div class="field full">
-                <label for="mce-ADDRESS-addr1">Address<span class="asterisk">*</span></label>
-                <input type="text" value="" placeholder="&#160;" maxlength="50" name="ADDRESS[addr1]" id="mce-ADDRESS-addr1" class="required">
-              </div>
-              <div class="field full">
-                <label for="mce-ADDRESS-addr2" style="visibility:hidden">Address 2</label>
-                <input type="text" value="" placeholder="&#160;" maxlength="50" name="ADDRESS[addr2]" id="mce-ADDRESS-addr2">		
-              </div>
-              <div class="field full">
-                <label for="mce-ADDRESS-city">City<span class="asterisk">*</span></label>
-                <input type="text" value="" placeholder="&#160;" maxlength="40" name="ADDRESS[city]" id="mce-ADDRESS-city" class="required">
-              </div>
-              <div class="field">
-                <label for="mce-ADDRESS-state">State<span class="asterisk">*</span></label>
-                <input type="text" value="" placeholder="&#160;" maxlength="20" name="ADDRESS[state]" id="mce-ADDRESS-state" class="required">
-              </div>
-              <div class="field zip">
-                <label for="mce-ADDRESS-zip">Zip Code<span class="asterisk">*</span></label>
-                <input type="text" value="" placeholder="&#160;" maxlength="10" name="ADDRESS[zip]" id="mce-ADDRESS-zip" class="required">
-              </div>
-              <div class="field hidden">
-                <label for="mce-ADDRESS-country">Country</label>
-                <select name="ADDRESS[country]" id="mce-ADDRESS-country" class="required"><option value="164" selected>USA</option></select>
-              </div>
-            </div>
-            <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ccbd97ec31c9fff7815a3f355_b7393a1b08" tabindex="-1" value=""></div>
-            <div class="field">
-              <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
-          </div>
-        </form>
-        <div class="privacy">
-          <p>By clicking submit, you acknowledge that your information will be transferred to Mailchimp for registration processing. <a href="https://mailchimp.com/legal/terms" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
-        </div>
-      </div>
       <div class="registration2">{{ registration2 | markdownify | safe }}</div>
     </section>
     <section class="text documentation">
