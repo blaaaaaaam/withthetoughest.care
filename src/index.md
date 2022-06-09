@@ -20,7 +20,9 @@ registration: |
 
   Registrations are limited to residents of Hawai‘i
 registration2: |
-  Registrations are now closed.
+  According to the Marine Exchange of Southern California, there are currently 96 ships waiting to enter the port of Ke Awa O Kou. Record numbers of goods destined for Hawai‘i remain bottlenecked in congested air cargo shipping pipelines. While supply chain delays are attributed to COVID-19, the extractive systems of rapid worldwide shipping have been under stress long before the global pandemic. 
+
+  This project imagines that the Blessed Milk Thistle, with its anti-inflammatory properties, might ease congestion as its scent travels through backed up supply chains from Dharug Land to across Hawai‘i.
 thistle: |
   It is impossible for locusts to penetrate the thorns of plants. When swarms invaded Lebanon, Palestine and Syria during World War 1, the Blessed Milk Thistle was one of few species spared. Famine ensued, though the plant sustained those who learned to cut, shave, and boil its roots, stems, and bulbs. 
 
